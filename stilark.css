@@ -1,0 +1,198 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+h1 {
+	font-family: 'Archivo Black', sans-serif;
+}
+body {
+	background-color: #D4B28C;
+  margin: 0;
+  font-family: 'Lora', serif;
+}
+footer{
+  text-align: center;
+	font-size: 20px;
+}
+
+
+#maingrid {
+  display: grid;
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+	grid-template-columns:1fr 1fr 1fr;
+  grid-template-areas:
+  "tittel tittel tittel"
+  "topnav topnav topnav"
+  "sidebar sidebar sidebar"
+  "hovedkolonne hovedkolonne hovedkolonne";
+}
+.tittel{
+  grid-area: tittel;
+
+}
+.topnav{
+  grid-area: topnav;
+	border: 1px solid black;
+	width: 100%;
+}
+#sidebar{
+  grid-area: sidebar;
+  padding: 10px;
+}
+#hovedkolonne{
+  grid-area: hovedkolonne;
+  padding: 10px;
+}
+
+#article-flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+article {
+	width: 50%;
+	display: block;
+	overflow: hidden;
+	margin-bottom: 2%;
+}
+
+		article h2, article p {
+			padding-left: 15px;
+			padding-right: 15px;
+			margin: 5px;
+		}
+		article a {
+			background: #94632B;
+			color: black;
+			padding: 10px 20px;
+			float: right;
+			margin: 10px;
+			text-decoration: none;
+		}
+
+
+nav {
+	background-color: #94632B;
+	margin: 0;
+	overflow: hidden;
+}
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+nav ul li{
+	display: inline-block;
+	list-style-type: none;
+
+}
+nav > ul > li > a{
+	color: black;
+	font-size: 20px;
+  border-right: 1px solid black;
+	background-color: #94632B;
+	display: block;
+	line-height: 0.2em;
+	padding: 1em 3em;
+	text-decoration: none;
+}
+
+#headerimg{
+  max-width: 100%;
+  height: 200px;
+	background: url("./bilder/forsidebilde.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+#headertitle{
+  font-size: 70px;
+  color: black;
+  text-align: center;
+  padding-top: 60px;
+}
+#link{
+  border: 1px solid black;
+  color: black;
+}
+#websearch{
+  border: 1px solid black;
+  color: black;
+}
+#storartikkel{
+  padding-left: 300px;
+  text-align: center;
+}
+
+.artikkelheader{
+  text-align: center;
+  font-size: 30px;
+}
+
+#websearch{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+  background: #94632B;
+	margin-bottom: 2%;
+}
+
+		#websearch a {
+			background: #94632B;
+			color: black;
+			padding: 10px 20px;
+			float: left;
+			margin: 10px;
+			text-decoration: none;
+		}
+
+  #link {
+  	width: 100%;
+  	display: block;
+  	overflow: hidden;
+    background: #94632B;
+  	margin-bottom: 2%;
+  }
+
+    	#link a {
+    		background: #94632B;
+    		color: black;
+    		padding: 10px 20px;
+    		float: left;
+    		margin: 10px;
+    		text-decoration: none;
+    	}
+
+@media screen and (min-width: 736px)
+{
+  #maingrid {
+    display: grid;
+  	width: 100%;
+  	max-width: 1400px;
+  	margin: 0 auto;
+  	grid-template-columns:1fr 1fr 1fr;
+    grid-template-areas:
+    "tittel tittel tittel"
+    "topnav topnav topnav"
+    "sidebar hovedkolonne hovedkolonne";
+  }
+}
+
+main img{
+	height: 250px;
+	width: 450px;
+}
+
+ol{
+	list-style: none;
+}
+
+a.knapp:hover, a.knapp:active {
+    background-color: grey;
+}
